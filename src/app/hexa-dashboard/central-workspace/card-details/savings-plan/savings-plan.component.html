@@ -1,0 +1,25 @@
+<div class="savings-plan">
+    <span class="savings-product">
+        <span class="savings-product-details">
+            <app-dashboard-icons iconColor="#000036" [icon]="productIcon"></app-dashboard-icons>
+            <span class="product-details">
+                <span class="product-name">{{productName}}</span>
+                <span class="product-target">Target: ${{productTarget}}</span>
+            </span>
+        </span>
+        <span>
+            <span class="material-icons material-icons-default">more_horiz</span>
+        </span>
+    </span>
+    <span class="savings-progress">
+        <span class="product-details product-progress">
+            <span>
+                Total: ${{targetAchieved}}
+            </span>
+            <span>
+                {{progressPercentage()}}%
+            </span>
+        </span>
+        <input type="range" min="1" max="{{productTarget}}" value="{{targetAchieved}}">
+    </span>
+</div>

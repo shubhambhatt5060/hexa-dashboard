@@ -1,0 +1,30 @@
+.total-balance-details {
+    .header-text {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: #000036;
+    }
+
+    .total-balance {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .total-balance-number {
+        font-size: 41px;
+        font-weight: 900;
+
+    }
+    .monthly-limit-details {
+        display: flex;
+        justify-content: space-between;
+    
+        .limit-text {
+            color: #d1d3de !important;
+        }
+        .limit-used {
+            color: #000036;
+        }
+    }
+}

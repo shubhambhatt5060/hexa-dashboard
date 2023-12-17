@@ -1,0 +1,13 @@
+.company-logo {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    .logo {
+        display: flex;
+        gap: 5px;
+    }
+}

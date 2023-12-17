@@ -1,0 +1,76 @@
+.card-details {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    .added-cards, .savings-plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icons {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    .added-cards-details {
+        width: 100%;
+        border: 1px solid;
+        display: flex;
+        height: 160px;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, #28285a 0%, #91a9a9 100%);
+        border: none;
+
+    }
+    .add-card {
+        border-radius: 10px;
+        border: 3px dotted #d1d3de;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        .material-icons {
+            color: #000036;;
+        }
+        .add-card-text {
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+    .header-text {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+
+        span {
+            font-size: 12px;
+            font-weight: 100;
+        }
+    }
+    .quick-actions {
+        border-radius: 10px;
+        border: 1px solid #d1d3de;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .quick-action-option {
+            display: flex;
+            flex-direction: column;  
+            .quick-action-text {
+                font-family: "Roboto", sans-serif;
+
+            }      
+        }
+        .vertical-rule {
+            border-right: 1px solid #d1d3de;
+            height: 70%;
+        }
+        .material-icons {
+            align-self: center;
+            color: #000036;
+        }
+    }
+}

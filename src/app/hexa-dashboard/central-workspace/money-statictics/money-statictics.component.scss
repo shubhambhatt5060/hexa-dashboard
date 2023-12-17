@@ -1,0 +1,56 @@
+.money-stats-details {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    .money-stats {
+        display: flex;
+        justify-content: space-between;
+
+        .header-text {
+            font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: #000036;
+        }
+
+        .stats-filter {
+            border: 1px solid #d1d3de;
+            border-radius: 10px;
+            padding: 5px 10px;
+            display: flex;
+        }
+
+        span:last-child {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+
+    .total-expenses {
+        display: flex;
+        justify-content: space-between;
+        .total-expense {
+            display: flex;
+            flex-direction: column;
+            .expense {
+                font-size: 12px;
+                font-weight: 600;
+                color: #a4a5a7;
+            }
+            .amount {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .material-icons {
+                font-size: 14px;
+            }
+        }
+        .vertical-rule {
+            border-left: 1px solid #d1d3de;
+            width: 15px;
+            margin: 5px;
+        }
+    }
+}

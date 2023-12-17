@@ -1,0 +1,15 @@
+.custom-menu-options {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    .option-name,
+    .material-icons {
+        color: #636675;
+    }
+    .option-name {
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Roboto', sans-serif;
+
+    }
+}

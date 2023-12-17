@@ -1,0 +1,51 @@
+.hexa-dashboard {
+    margin-bottom: 15px;
+    .header-toster {
+        width: 100%;
+        height: 50px;
+        background-color: #000036;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+
+        span:nth-child(2) {
+            width: 100px;
+            height: 50%;
+            border: 1px solid white;
+            background: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000036;
+            margin-left: 14px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 900;
+
+        }
+
+        span:last-child {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+    }
+
+    .main-content {
+        display: grid;
+        width: calc(100% - 10px);
+        height: 100vh;
+        grid-gap: 10px;
+        gap: 10px;
+        grid-template-columns: 25% calc(75% - 10px);
+        grid-template-rows: 100%;
+        margin-top: 5px;
+
+    }
+}

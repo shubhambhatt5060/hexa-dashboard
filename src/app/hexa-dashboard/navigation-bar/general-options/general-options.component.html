@@ -1,0 +1,6 @@
+<div class="general-option">
+    <span>GENERAL</span>
+    <div class="general" *ngFor="let general of generalList">
+        <app-custom-menu-option [optionIcon]="general.menuIcon" [optionLabel]="general.menuName"></app-custom-menu-option>
+    </div>
+</div>

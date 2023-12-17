@@ -1,0 +1,28 @@
+<div class="central-workspace">
+    <app-dashboard-card>
+        <div class="overview-view">
+            <span class="primary-font">Overview</span>
+            <app-dashboard-search></app-dashboard-search>
+            <span class="icons">
+                <app-dashboard-icons icon="mark_email_unread"></app-dashboard-icons>
+                <app-dashboard-icons icon="notifications_active"></app-dashboard-icons>
+            </span>
+        </div>
+    </app-dashboard-card>
+    <div class="grid-with-two-columns">
+        <app-dashboard-card>
+            <app-card-details></app-card-details>
+        </app-dashboard-card>
+        <div class="grid-with-three-rows">
+            <app-dashboard-card>
+                <app-total-balance [totalBalanceData]="dashboardData?.balance"></app-total-balance>
+            </app-dashboard-card>
+            <app-dashboard-card>
+                <app-money-statictics [moneyStats]="dashboardData?.money_statistics"></app-money-statictics>
+            </app-dashboard-card>
+            <app-dashboard-card>
+                <app-transaction-history [transactionData]="dashboardData?.transactions"></app-transaction-history>
+            </app-dashboard-card>
+        </div>
+    </div>
+</div>

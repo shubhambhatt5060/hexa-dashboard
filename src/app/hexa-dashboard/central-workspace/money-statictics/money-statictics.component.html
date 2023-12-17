@@ -1,0 +1,71 @@
+<div class="money-stats-details">
+    <span class="money-stats">
+        <span class="header-text">
+            Money Statictics
+        </span>
+        <span>
+            <span class="stats-filter">
+                Monthly
+                <span class="material-icons material-icons-default">expand_more</span>
+            </span>
+            <span class="material-icons material-icons-default">more_horiz</span>
+        </span>
+    </span>
+    <span class="total-expenses">
+        <span class="total-expense">
+            <span class="expense">
+                Total Income
+            </span>
+            <span class="amount">
+                {{moneyStats?.total_income?.value}}
+            </span>
+            <span class="expense">
+                <span class="material-icons" [ngStyle]="{'color': moneyStats?.total_income?.trend_color}">trending_up</span>
+                <span [ngStyle]="{'color': moneyStats?.total_income?.trend_color}">+{{moneyStats?.total_income?.trend}}%</span>
+                from last month
+            </span>
+        </span>
+        <span class="vertical-rule"></span>
+        <span class="total-expense">
+            <span class="expense">
+                Total Income
+            </span>
+            <span class="amount">
+                {{moneyStats?.total_expense?.value}}
+            </span>
+            <span class="expense">
+                <span class="material-icons" [ngStyle]="{'color': moneyStats?.total_expense?.trend_color}">trending_up</span>
+                <span [ngStyle]="{'color': moneyStats?.total_expense?.trend_color}">+{{moneyStats?.total_expense?.trend}}%</span>
+                from last month
+            </span>
+        </span>
+        <span class="vertical-rule"></span>
+        <span class="total-expense">
+            <span class="expense">
+                Total Income
+            </span>
+            <span class="amount">
+                {{moneyStats?.total_investment?.value}}
+            </span>
+            <span class="expense">
+                <span class="material-icons" [ngStyle]="{'color': moneyStats?.total_investment?.trend_color}">trending_up</span>
+                <span [ngStyle]="{'color': moneyStats?.total_investment?.trend_color}">+{{moneyStats?.total_investment?.trend}}%</span>
+                from last month
+            </span>
+        </span>
+    </span>
+    <div id="chart">
+        <apx-chart
+          [series]="chartOptions?.series"
+          [chart]="chartOptions?.chart"
+          [dataLabels]="chartOptions?.dataLabels"
+          [plotOptions]="chartOptions?.plotOptions"
+          [yaxis]="chartOptions?.yaxis"
+          [legend]="chartOptions?.legend"
+          [fill]="chartOptions?.fill"
+          [stroke]="chartOptions?.stroke"
+          [tooltip]="chartOptions?.tooltip"
+          [xaxis]="chartOptions?.xaxis"
+        ></apx-chart>
+      </div>
+</div>

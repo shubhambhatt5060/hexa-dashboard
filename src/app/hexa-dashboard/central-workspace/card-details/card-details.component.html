@@ -1,0 +1,51 @@
+<div class="card-details">
+    <span class="added-cards">
+        <span class="header-text">
+            My Cards: 1<span>/2</span>
+        </span>
+        <span class="icons">
+            <app-dashboard-icons iconColor="#000036" icon="chevron_left"></app-dashboard-icons>
+            <app-dashboard-icons iconColor="#000036" icon="chevron_right"></app-dashboard-icons>
+        </span>
+    </span>
+    <span class="added-cards-details">
+        <div class="card"></div>
+    </span>
+    <span class="add-card">
+        <span class="material-icons">add_circle</span>
+        <span class="add-card-text">Add New Card</span>
+    </span>
+    <app-horizontal-rule></app-horizontal-rule>
+    <span class="header-text">
+        Quick Actions
+    </span>
+    <span class="quick-actions">
+        <span class="quick-action-option">
+            <span class="material-icons">add_box</span>
+            <span class="quick-action-text">Top up</span>
+        </span>
+        <span class="vertical-rule"></span>
+        <span class="quick-action-option">
+            <span class="material-icons">send</span>
+            <span class="quick-action-text">Transfer</span>
+        </span>
+        <span class="vertical-rule"></span>
+        <span class="quick-action-option">
+            <span class="material-icons">call_received</span>
+            <span class="quick-action-text">withdrawal</span>
+        </span>
+    </span>
+    <app-horizontal-rule></app-horizontal-rule>
+    <span class="savings-plan">
+        <span class="header-text">
+            Savings Plan
+        </span>
+        <span class="icons">
+            <app-dashboard-icons iconColor="#000036" icon="add"></app-dashboard-icons>
+        </span>
+    </span>
+    <div *ngFor="let saving of savingList">
+        <app-savings-plan [productName]="saving.productName" [productIcon]="saving.productIcon" 
+            [productTarget]="saving.productTarget" [targetAchieved]="saving.targetAchieved"></app-savings-plan>
+    </div>
+</div>

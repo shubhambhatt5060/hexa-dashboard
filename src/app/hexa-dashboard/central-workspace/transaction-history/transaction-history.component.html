@@ -1,0 +1,37 @@
+<div class="transaction-history-details">
+    <span class="transaction-history">
+        <span class="header-text">
+            Transaction History
+        </span>
+        <span>
+            <app-dashboard-search></app-dashboard-search>
+            <app-dashboard-icons icon="filter_alt" iconName="Filter"></app-dashboard-icons>
+            <app-dashboard-icons icon="ios_share" iconName="Export"></app-dashboard-icons>
+        </span>
+    </span>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Name</th>
+                <th scope="col">Status</th>
+                <th scope="col">Type</th>
+                <th scope="col">Time</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let trans of transactionData">
+            <tr>
+                <td data-label="Date">{{trans.date | date:'longDate'}}</td>
+                <td data-label="Name">{{trans.name}}</td>
+                <td data-label="Status">{{trans.status}}</td>
+                <td data-label="Type">{{trans.type}}</td>
+                <td data-label="Time">{{trans.date | date:'shortTime'}}</td>
+                <td data-label="Amount">{{trans.amount}}</td>
+                <td data-label="Action"> <span (click)="showDetails(trans)" class="material-icons material-icons-default">more_horiz</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,6 @@
+<div class="menu-option">
+    <span>MENU</span>
+    <div class="menu" *ngFor="let menu of menuList">
+        <app-custom-menu-option [optionIcon]="menu.menuIcon" [optionLabel]="menu.menuName"></app-custom-menu-option>
+    </div>
+</div>

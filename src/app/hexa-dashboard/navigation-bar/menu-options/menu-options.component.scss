@@ -1,0 +1,27 @@
+.menu-option {
+    display: flex;
+    margin: 0px 20px;
+    flex-direction: column;
+
+    span {
+        color: #636675;
+        padding: 5px 0px;
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 0px 20px;
+        padding: 10px;
+    }
+
+    .menu:hover {
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: white;
+    }
+}

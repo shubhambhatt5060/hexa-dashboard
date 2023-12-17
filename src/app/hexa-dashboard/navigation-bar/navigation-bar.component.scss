@@ -1,0 +1,43 @@
+.navigation-bar {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 2px 30% 2px 24% 2px 24%;
+
+    .payment-option {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .payment {
+            border-radius: 10px;
+            border: 3px dotted #d1d3de;
+            width: 200px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .payment-icon-border {
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 3px dotted #000036;
+
+                .material-icons {
+                    color: #000036;
+                    font-size: 60px;
+                }
+
+                .payment-option-text {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<div class="hexa-dashboard">
+    <div *ngIf="isToShowToster" class="header-toster">
+        <span>Stay updated on our latest feature by receiving notifications from us!</span> <span>Learn More</span>
+        <span class="material-icons" (click)="closeTosterMessage()">close</span>
+    </div>
+    <div class="main-content">
+        <app-navigation-bar></app-navigation-bar>
+        <app-central-workspace></app-central-workspace>
+    </div>
+</div>

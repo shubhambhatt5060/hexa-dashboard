@@ -1,0 +1,25 @@
+<div class="total-balance-details">
+    <span class="total-balance">
+        <span class="header-text">
+            Total Balance
+        </span>
+        <span>
+            <span class="material-icons material-icons-default">more_horiz</span>
+        </span>
+    </span>
+    <span class="total-balance-number">
+        ${{totalBalance}}
+    </span>
+    <input type="range" min="1" max="{{monthlyPaymentLimit}}" value="{{monthlyLimitUsed}}">
+    <span class="monthly-limit-details">
+        <span class="limit-text">
+            Monthly Payment Limit
+        </span>
+        <span class="limit-used">
+            ${{monthlyLimitUsed}}  
+            <span class="limit-text">
+                /{{monthlyPaymentLimit}}
+            </span>
+        </span>
+    </span>
+</div>
